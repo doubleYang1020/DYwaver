@@ -9,6 +9,9 @@
 #import <UIKit/UIKit.h>
 
 @interface Waver : UIView
+
+@property (nonatomic) CGFloat level;
+
 @property (nonatomic, copy) void (^waverLevelCallback)(Waver * waver);
 
 -(instancetype)initWithFrame:(CGRect)frame andNumberOfWaves:(NSUInteger)numberOfWaves andWavesColors:(NSArray*)colorsAry andDecorativeWavesWidth:(CGFloat)decorativeWavesWidth;
